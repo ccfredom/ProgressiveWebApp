@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compltible" content="IE=Edge">
-  <link re="canonical" href="http://weather-pwa-sample.firebaseapp.com/final/">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="canonical" href="http://weather-pwa-sample.firebaseapp.com/final/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Weather PWA</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css" >
-  <!--TODO manifest here -->
+  <!--TODO add manifest here -->
 </head>
 <body>
   <header class="header">
-    <h1 class="header_title">Weather PWA</h1>
+    <h1 class="header__title">Weather PWA</h1>
     <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
     <button id="butAdd" class="headerButton" aria-label="Add"></button>
   </header>
@@ -34,8 +34,8 @@
           <div class="humidity"></div>
           <div class="wind">
             <span class="value"></span>
-            <span class="scale"></span>
-            <span class="direction"></span>
+            <span class="scale">mph</span>
+            <span class="direction"></span>°
           </div>
           <div class="sunrise"></div>
           <div class="sunset"></div>
@@ -117,9 +117,9 @@
   </main>
   <div class="dialog-container">
     <div class="dialog">
-      <div class="dialog-title"></div>
+      <div class="dialog-title">Add new city</div>
       <div class="dialog-body">
-        <select id="selectCityToAdd">
+        <select id="selectCityToAdd"  >
           <option value="2357536">Austin, TX</option>
           <option value="2367105">Boston, MA</option>
           <option value="2379574">Chicago, IL</option>
@@ -141,6 +141,6 @@
     </svg>
   </div>
 
-  <!-- <script src="scripts/app.js" async></script> -->
+   <script src="scripts/app.js" async></script>
 </body>
 </html>
