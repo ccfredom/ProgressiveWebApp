@@ -166,7 +166,7 @@
   app.saveSelectedCities = function(){
     var selectedCities = JSON.stringify(app.selectedCities);
     localStorage.selectedCities = selectedCities;
-  }
+  };
   app.getIconClass = function(weatherCode){
     //weather codes: https://developer.yahoo.com/weather/documentation.html#codes
 
